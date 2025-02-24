@@ -2,7 +2,8 @@ import telebot
 from telebot import types
 
 # Введіть свій токен, отриманий від BotFather
-TOKEN = '7881434050:AAGNmy4roLSFg6e4R0ENisP-ZwLDeLfEoJI'
+import os
+TOKEN = os.getenv('TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 # Розклад уроків
